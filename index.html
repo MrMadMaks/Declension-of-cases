@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Склонение падежей</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <section class="authorization">
+                <h1 class="form__title">Склонение падежей</h1>
+                <form action="#" class="form" id='consultation-form'>
+                    <div class="form__star1">*</div>
+                    <div class="form__star11">*</div>
+                    <label class="form__label-email _req" for="email">Введите слово, которое хотите просклонять</label>
+                    <input type="text" name="email" class="form__email _inp" id="email" placeholder="слово">
+
+                    <div class="_rel">
+                        <div class="form__star2">*</div>
+                        <div class="form__star22">*</div>
+                        <label for="pass" class="form__label-pass _req">Выберите падеж</label>
+                        <select name="password" class="form__password _inp" id="pass" placeholder="Падеж">
+                            <option selected value="родительный">родительный</option>
+                            <option value="дательный">дательный</option>
+                            <option value="винителный">винителный</option>
+                            <option value="творительный">творительный</option>
+                            <option value="предложный">предложный</option>
+                        </select>
+                        <label for="pass" class="form__label-pass _req">Результат</label>
+                        <input type="text" name="password" class="form__password _inp result">
+                    </div>
+
+                    <div class="form__check-wrapper">
+                        <div class="form__star3">*</div>
+                        <div class="form__star33">*</div>
+                        <input type="checkbox" class="form__check" id="check" name="checkbox">
+                        <div class="form__check-mark" name="checkbox"></div>
+                        <label for="check" class="form__label-check">Я согласен c <a href="#">Правилами пользования
+                                приложением</a></label>
+                    </div>
+                    <label for="check" class="_label-for-check">Поле обязательно для заполнения</label>
+
+                    <div class="form__btn-wrapper">
+                        <button class="form__btn">Просклонять</button>
+                    </div>
+
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
